@@ -1,0 +1,83 @@
+<html>
+    <head>
+	<script
+	    src="https://code.jquery.com/jquery-3.3.1.js"
+	    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	    crossorigin="anonymous"></script>
+	<link href="main.css" rel="stylesheet" type="text/css"/>
+	<script>
+	 
+	 // app instance variables
+
+	 // main array of numbers
+	 let field;
+	 
+	 function generateVals() {
+	     
+	     alert("ready");
+	     
+	     /* field = Array(4 * 4)
+		.fill()
+		.map();*/
+	 }
+	 
+	 $(document).ready(function() {
+	     generateVals();
+	 })
+	 
+	 $(document).keydown(function(key) {
+	     
+	     // arrow key codes handler
+
+	     // 37 left
+	     // 38 up
+	     // 39 right
+	     // 40 down
+	     
+	     switch(key.which) {
+		 case 37:
+		     alert("left");
+		     alert(some);
+		     break;
+		 case 38:
+		     alert("up");
+		     break;
+		 case 39:
+		     alert("right");
+		     break;
+		 case 40:
+		     alert("down");
+		     break;
+		 default:
+		     return;
+	     }
+	 });
+	</script>
+    </head>
+    <body>
+	<div class="main-block">
+	    
+	    <div class="num-block v-0 h-0"><span>2</span></div>
+	    <div class="num-block v-1 h-0"><span>4</span></div>
+	    
+	    <div class="num-block v-2 h-0"><span>8</span></div>
+	    <div class="num-block v-3 h-0"><span>16</span></div>
+	    
+	    <div class="num-block v-0 h-1"><span>1</span></div>
+	    <div class="num-block v-1 h-1"><span>1</span></div>
+	    <div class="num-block v-2 h-1"><span>1</span></div>
+	    <div class="num-block v-3 h-1"><span>1</span></div>
+	    
+	    <div class="num-block v-0 h-2"><span>1</span></div>
+	    <div class="num-block v-1 h-2"><span>1</span></div>
+	    <div class="num-block v-2 h-2"><span>1024</span></div>
+	    <div class="num-block v-3 h-2"><span>1</span></div>
+	    
+	    <div class="num-block v-0 h-3"><span>1</span></div>
+	    <div class="num-block v-1 h-3"><span>2048</span></div>
+	    <div class="num-block v-2 h-3"><span>2048</span></div>
+	    <div class="num-block v-3 h-3"><span>1</span></div>
+	    
+	</div>
+    </body>
+</html>
